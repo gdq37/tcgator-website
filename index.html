@@ -1,38 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TC GATOR Collectibles</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TC Gator Collectibles</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>TC GATOR</h1>
-    <p>Buy • Sell • Trade Collectibles</p>
+  <div class="background-glow">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="falling-petals">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>TC</span> GATOR
+      <p>COLLECTIBLES</p>
+    </div>
+
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#trade">Trade / Sell</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="socials">
+      <span>◎</span>
+      <span>♪</span>
+      <span>▢</span>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Oceanside’s Collectibles Hub</h2>
-      <p>Pokémon, slabs, sealed products, baseball cards, and local trades.</p>
-      <button>View Inventory</button>
+
+    <section class="hero" id="trade">
+      <h1>Sell or Trade With TC Gator</h1>
+      <p>Got cards, sealed products, slabs, or collections you want to move?</p>
+      <p>Send us the details and we’ll take a look.</p>
+
+      <div class="hero-grid">
+        <div class="info-card">
+          <div class="info-row">
+            <div class="icon">▱</div>
+            <div>
+              <h3>Pokémon singles and slabs</h3>
+              <p>From modern hits to vintage bangers.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="icon">⬡</div>
+            <div>
+              <h3>Sealed products</h3>
+              <p>ETBs, booster boxes, tins, and more.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="icon">▤</div>
+            <div>
+              <h3>Other TCG collections</h3>
+              <p>Yu-Gi-Oh!, One Piece, Dragon Ball, and more.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="icon">▰</div>
+            <div>
+              <h3>Bulk cards and binders</h3>
+              <p>We buy bulk! Send what you got.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-card">
+          <img src="slabs.png" alt="TC Gator graded card slabs" />
+        </div>
+      </div>
     </section>
 
-    <section class="categories">
-      <div>Raw Singles</div>
-      <div>Graded Slabs</div>
-      <div>Sealed Products</div>
-      <div>Baseball Cards</div>
+    <div class="ticker-bar">
+  <div class="ticker-track">
+    <span>BUY</span>
+    <span>SELL</span>
+    <span>TRADE</span>
+    <span>OCEANSIDE CA</span>
+    <span>POKÉMON</span>
+    <span>ONE PIECE</span>
+    <span>DRAGON BALL</span>
+    <span>SEALED PRODUCTS</span>
+    <span>SLABS</span>
+    <span>RAW SINGLES</span>
+  </div>
+</div>
+
+    <section class="inventory-section" id="inventory">
+  <div class="section-header">
+    <p class="eyebrow">Fresh Picks</p>
+    <h2>Featured Inventory</h2>
+    <p>Placeholder cards for now — later we’ll swap these with your real slabs, singles, and sealed products.</p>
+  </div>
+
+  <div class="inventory-filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="pokemon">Pokémon</button>
+  <button class="filter-btn" data-filter="dragonball">Dragon Ball</button>
+  <button class="filter-btn" data-filter="onepiece">One Piece</button>
+  <button class="filter-btn" data-filter="sealed">Sealed</button>
+  <button class="filter-btn" data-filter="trade">Trade</button>
+</div>
+
+  <div class="inventory-grid">
+    <div class="inventory-card reveal" data-category="pokemon">
+      <img class="card-image" src="umbreon.png" alt="Umbreon Pokémon card">
+      <h3>Premium Slabs</h3>
+      <p>Graded Pokémon Card</p>
+      <span>$5,000</span>
+      <button>View Card</button>
+    </div>
+
+    <div class="inventory-card reveal" data-category="dragonball">
+      <img class="card-image" src="goku.png" alt="Son Goku Dragon Ball card">
+      <h3>Clean Raw Singles</h3>
+      <p>Dragon Ball Super Mint Singles</p>
+      <span>$20,000</span>
+      <button>View Card</button>
+    </div>
+
+    <div class="inventory-card reveal" data-category="onepiece">
+      <img class="card-image" src="luffy.png" alt="Gear 5 Luffy One Piece card">
+      <h3>One Piece</h3>
+      <p>Available for Buy / Sell / Trade</p>
+      <span>Buy/Trade</span>
+      <button>Make Offer</button>
+    </div>
+
+ <div class="inventory-card reveal" data-category="sealed">
+      <img class="card-image" src="sealed.png" alt="Sealed trading card product">
+      <h3>Sealed Product</h3>
+      <p>ETB / Booster / Collection Box</p>
+      <span>$170</span>
+      <button>View Item</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="slab-showcase">
+  <div class="showcase-content">
+    <p class="eyebrow">Featured Grail</p>
+    <h2>Premium Slab Showcase</h2>
+    <p>
+      Highlight your cleanest slabs, rare pickups, and top trade pieces here.
+      This section can later feature your real grails.
+    </p>
+<a href="#sell-trade" class="showcase-btn">Trade With Us</a>
+  </div>
+
+  <div class="showcase-card">
+    <div class="showcase-slab">PSA 10</div>
+  </div>
+</section>
+
+    <section class="looking" id="shop">
+      <h2>Currently Looking For</h2>
+
+      <div class="looking-grid">
+        <div class="small-card">
+          <div class="icon">▱</div>
+          <div>
+            <h3>Pokémon Collections</h3>
+            <p>Binders, vintage cards, modern hits, bulk, and full collections.</p>
+          </div>
+        </div>
+
+        <div class="small-card">
+          <div class="icon">✓</div>
+          <div>
+            <h3>PSA & TAG Slabs</h3>
+            <p>High-end graded cards, rare promos, alt arts, and grails.</p>
+          </div>
+        </div>
+
+        <div class="small-card">
+          <div class="icon">⬡</div>
+          <div>
+            <h3>Sealed Products</h3>
+            <p>ETBs, booster boxes, tins, packs, and collection boxes.</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Send Your Collection</h2>
+      <p>Fill this out so we can review what you have.</p>
+
+      <form class="trade-form">
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Your email" />
+        <input type="text" placeholder="What do you have?" />
+        <textarea placeholder="Tell us about the cards, condition, quantity, and value."></textarea>
+        <button type="submit">Send Details</button>
+      </form>
+    </section>
+
   </main>
 
   <footer>
-    <p>Contact: gator@tcgator.net</p>
-    <p>Instagram: @TC.Gator</p>
+    <div class="logo footer-logo">
+      <span>TC</span> GATOR
+      <p>COLLECTIBLES</p>
+    </div>
+
+    <div>
+      <p>Oceanside, CA</p>
+      <div class="footer-socials">
+        <span>◎</span>
+        <span>♪</span>
+        <span>f</span>
+      </div>
+    </div>
+
+    <div>
+      <p>© 2024 TC GATOR COLLECTIBLES</p>
+      <p>All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+  const revealElements = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    revealElements.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 120;
+
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const inventoryCards = document.querySelectorAll(".inventory-card");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const filter = button.getAttribute("data-filter");
+
+    inventoryCards.forEach((card) => {
+      const category = card.getAttribute("data-category");
+
+      if (filter === "all" || filter === category) {
+        card.classList.remove("hide");
+      } else {
+        card.classList.add("hide");
+      }
+    });
+  });
+});
+
+</script>
+
 </body>
 </html>
