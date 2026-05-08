@@ -1136,8 +1136,14 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #c084fc;
+  color: white;
   text-shadow: 0 0 12px rgba(192, 132, 252, 0.9);
   transform: translateY(-2px);
   opacity: 1;
+}
+
+.social-icons,
+.footer-socials {
+  position: relative;
+  z-index: 10;
 }
