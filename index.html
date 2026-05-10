@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>TC GATOR</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="TC Gator Collectibles buys, sells, and trades Pokémon cards, slabs, sealed products, and other TCG collections in Oceanside and North County San Diego.">
+
+<meta property="og:title" content="TC Gator Collectibles">
+<meta property="og:description" content="Buy, sell, and trade Pokémon cards, slabs, sealed products, and TCG collections.">
+<meta property="og:image" content="https://tcgator.net/favicon.png">
+<meta property="og:url" content="https://tcgator.net">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TC Gator Collectibles">
+<meta name="twitter:description" content="Buy, sell, and trade Pokémon cards, slabs, sealed products, and TCG collections.">
+<meta name="twitter:image" content="https://tcgator.net/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -377,6 +391,17 @@
     <button type="submit">Send Details</button>
 
   </form>
+ <div class="form-popup" id="formPopup">
+  <div class="form-popup-box">
+    <button class="form-popup-close" id="formPopupClose">×</button>
+
+    <h3>Submission Sent!</h3>
+
+    <p>
+      Thanks for reaching out. We’ll review your collection and get back to you soon.
+    </p>
+  </div>
+</div>
 </section>
 
   </main>
@@ -606,6 +631,58 @@ window.addEventListener("mousemove", (e) => {
     cursorGlowEffect.style.top = `${e.clientY}px`;
   }
 });
+const tradeForm = document.getElementById("trade-form");
+const formPopup = document.getElementById("formPopup");
+const formPopupClose = document.getElementById("formPopupClose");
+
+tradeForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(tradeForm);
+
+  const response = await fetch(tradeForm.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    tradeForm.reset();
+    formPopup.classList.add("show");
+  }
+});
+
+formPopupClose.addEventListener("click", () => {
+  formPopup.classList.remove("show");
+});
+
+formPopup.addEventListener("click", (e) => {
+  if (e.target === formPopup) {
+    formPopup.classList.remove("show");
+  }
+});
+
+tradeForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(tradeForm);
+
+  const response = await fetch(tradeForm.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    tradeForm.reset();
+    successMessage.classList.add("show");
+  }
+});
+
 </script>
 
 </body>
