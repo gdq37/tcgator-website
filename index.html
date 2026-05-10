@@ -44,10 +44,10 @@
       <p>COLLECTIBLES</p>
     </div>
 
-   <nav class="nav-links">
+<nav class="nav-links">
   <a href="#home">Home</a>
   <a href="#shop">Shop</a>
-  <a href="#trade">Trade / Sell</a>
+  <a href="#bulk-binders">Trade / Sell</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -161,7 +161,7 @@
   </div>
 </div>
 
-    <section class="shop-categories reveal" id="pokemon">
+    <section class="shop-categories reveal" id="shop">
   <div class="section-header">
     <p class="eyebrow">Fresh Picks</p>
     <h2>Featured Inventory</h2>
@@ -339,17 +339,45 @@
     </section>
 
     <section class="contact-section reveal" id="contact">
-      <h2>Send Your Collection</h2>
-      <p>Fill this out so we can review what you have.</p>
+  <h2>Send Your Collection</h2>
+  <p>Fill this out so we can review what you have.</p>
 
-      <form class="trade-form" id="trade-form">
-        <input type="text" placeholder="Your name" />
-        <input type="email" placeholder="Your email" />
-        <input type="text" placeholder="What do you have?" />
-        <textarea placeholder="Tell us about the cards, condition, quantity, and value."></textarea>
-        <button type="submit">Send Details</button>
-      </form>
-    </section>
+  <form 
+    class="trade-form" 
+    id="trade-form"
+    action="https://formspree.io/f/xaqvlbdv"
+    method="POST"
+  >
+
+    <input 
+      type="text" 
+      name="name"
+      placeholder="Your name" 
+      required
+    />
+
+    <input 
+      type="email" 
+      name="email"
+      placeholder="Your email" 
+      required
+    />
+
+    <input 
+      type="text" 
+      name="collection"
+      placeholder="What do you have?" 
+    />
+
+    <textarea 
+      name="details"
+      placeholder="Tell us about the cards, condition, quantity, and value."
+    ></textarea>
+
+    <button type="submit">Send Details</button>
+
+  </form>
+</section>
 
   </main>
 
@@ -439,13 +467,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const cursorGlow = document.querySelector(".cursor-glow");
-
-window.addEventListener("mousemove", (e) => {
-  cursorGlow.style.left = `${e.clientX}px`;
-  cursorGlow.style.top = `${e.clientY}px`;
-});
-
 </script>
 
 <script>
@@ -487,6 +508,33 @@ window.addEventListener("mousemove", (e) => {
   updateActiveNav();
 </script>
 
+<div class="card-popup" id="cardPopup">
+  <div class="popup-overlay"></div>
+
+  <div class="popup-content">
+    <button class="popup-close" id="popupClose">✕</button>
+
+    <img src="" alt="" id="popupImage">
+
+    <div class="popup-info">
+      <h2 id="popupTitle"></h2>
+      <p id="popupText"></p>
+
+      <div class="popup-buttons">
+        <a href="https://instagram.com/tc.gator" target="_blank" class="popup-btn">
+          Message on Instagram
+        </a>
+
+        <a href="mailto:Gator@tcgator.net" class="popup-btn secondary">
+          Email Us
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cursor-glow"></div>
+
 <script>
 const lookTabs = document.querySelectorAll(".look-tab");
 const lookPanels = document.querySelectorAll(".look-panel");
@@ -501,20 +549,64 @@ lookTabs.forEach((tab) => {
     tab.classList.add("active");
 
     const activePanel = document.querySelector(`[data-panel="${selected}"]`);
-    activePanel.classList.add("active");
 
-    const cards = activePanel.querySelectorAll(".wanted-card");
+    if (activePanel) {
+      activePanel.classList.add("active");
 
-    cards.forEach((card) => {
-      card.style.animation = "none";
-      card.offsetHeight;
-      card.style.animation = "";
-    });
+      const cards = activePanel.querySelectorAll(".wanted-card");
+
+      cards.forEach((card) => {
+        card.style.animation = "none";
+        card.offsetHeight;
+        card.style.animation = "";
+      });
+    }
   });
 });
-</script>
 
-<div class="cursor-glow"></div>
+const popup = document.getElementById("cardPopup");
+const popupImage = document.getElementById("popupImage");
+const popupTitle = document.getElementById("popupTitle");
+const popupText = document.getElementById("popupText");
+const popupClose = document.getElementById("popupClose");
+const popupOverlay = document.querySelector(".popup-overlay");
+
+const inventoryButtons = document.querySelectorAll(".inventory-card button");
+
+inventoryButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".inventory-card");
+
+    const image = card.querySelector("img").src;
+    const title = card.querySelector("h3").textContent;
+    const text = card.querySelector("p").textContent;
+    const price = card.querySelector("span").textContent;
+
+    popupImage.src = image;
+    popupTitle.textContent = title;
+    popupText.textContent = `${text} — ${price}`;
+
+    popup.classList.add("active");
+  });
+});
+
+popupClose.addEventListener("click", () => {
+  popup.classList.remove("active");
+});
+
+popupOverlay.addEventListener("click", () => {
+  popup.classList.remove("active");
+});
+
+const cursorGlowEffect = document.querySelector(".cursor-glow");
+
+window.addEventListener("mousemove", (e) => {
+  if (cursorGlowEffect) {
+    cursorGlowEffect.style.left = `${e.clientX}px`;
+    cursorGlowEffect.style.top = `${e.clientY}px`;
+  }
+});
+</script>
 
 </body>
 </html>
