@@ -619,5 +619,18 @@
       }, 900);
     });
   </script>
+
+<audio id="clickSound" src="click.mp3" preload="auto"></audio>
+
+<script>
+const clickSound = document.getElementById("clickSound");
+
+document.addEventListener("click", () => {
+  clickSound.currentTime = 0;
+  clickSound.volume = 0.12;
+  clickSound.play();
+});
+</script>
+
 </body>
 </html>
