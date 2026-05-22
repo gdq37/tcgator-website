@@ -1016,17 +1016,21 @@ if (!isMobileDevice) {
   });
 }
 
-    /* LOADER */
+/* LOADER */
 
-    window.addEventListener("load", () => {
+const loader = document.getElementById("loader");
 
-      const loader = document.getElementById("loader");
+function hideLoader() {
+  if (loader) {
+    loader.classList.add("hide-loader");
+  }
+}
 
-      setTimeout(() => {
-        loader.classList.add("hide-loader");
-      }, 900);
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(hideLoader, 700);
+});
 
-    });
+setTimeout(hideLoader, 1800);
 
 /* STICKY NAV SHADOW */
 

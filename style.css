@@ -2757,3 +2757,31 @@ section {
 #bulk-binders {
   scroll-margin-top: 75px;
 }
+
+#loader.hide-loader {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .wanted-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    gap: 22px;
+    padding-bottom: 0;
+  }
+
+  .wanted-card {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    flex-shrink: 1;
+    scroll-snap-align: unset;
+  }
+
+  .look-panel {
+    overflow-x: hidden;
+  }
+}
