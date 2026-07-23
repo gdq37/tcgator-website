@@ -1,1062 +1,977 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="icon" type="image/png" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
-<meta name="theme-color" content="#12091f">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="theme-color" content="#12091f">
 
   <title>TC Gator Collectibles</title>
 
   <meta
     name="description"
-    content="TC Gator Collectibles buys, sells, and trades Pokémon cards, slabs, sealed products, and other TCG collections in Oceanside and North County San Diego."
-  />
+    content="TC Gator Collectibles buys, sells, and trades Pokémon, Dragon Ball, One Piece, sports cards, slabs, sealed products, and full collections in Oceanside, California."
+  >
 
-  <link rel="icon" type="favicon.png" href="favicon.png" />
-  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.PNG"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="images/logo.PNG"
+  >
+
+<link
+  rel="stylesheet"
+  href="css/style.css"
+>
 
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+  >
+
 
   <!-- OPEN GRAPH -->
-  <meta property="og:title" content="TC Gator Collectibles" />
+
+  <meta
+    property="og:title"
+    content="TC Gator Collectibles"
+  >
+
   <meta
     property="og:description"
-    content="Buy, sell, and trade Pokémon cards, slabs, sealed products, and TCG collections."
-  />
-  <meta property="og:image" content="https://tcgator.net/favicon.png" />
-  <meta property="og:url" content="https://tcgator.net" />
-  <meta property="og:type" content="website" />
+    content="Buy, sell, and trade trading cards, slabs, sealed products, and collections."
+  >
 
-  <!-- TWITTER -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="TC Gator Collectibles" />
   <meta
-    name="twitter:description"
-    content="Buy, sell, and trade Pokémon cards, slabs, sealed products, and TCG collections."
-  />
-  <meta name="twitter:image" content="https://tcgator.net/favicon.png" />
+    property="og:image"
+    content="https://tcgator.net/images/logo.PNG"
+  >
+
+  <meta
+    property="og:url"
+    content="https://tcgator.net"
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
 </head>
+
 
 <body>
 
-  <!-- SCROLL BAR -->
+
+  <!-- SCROLL PROGRESS -->
+
   <div class="scroll-progress"></div>
 
+
   <!-- LOADER -->
+
   <div id="loader">
-    <div class="loader-logo">TC GATOR</div>
-    <div class="loader-subtext">Collectibles loading...</div>
+
+    <div class="loader-logo">
+      TC GATOR
+    </div>
+
+    <div class="loader-subtext">
+      Collectibles loading...
+    </div>
+
   </div>
+
 
   <!-- BACKGROUND -->
+
   <div class="cherry-blossoms">
-    <span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span>
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
   </div>
+
 
   <div class="background-glow">
+
     <span></span>
     <span></span>
     <span></span>
+
   </div>
 
+
   <!-- NAVBAR -->
+
   <header class="navbar">
-    <a href="#home" class="logo">
+
+    <a
+      href="index.html"
+      class="logo"
+    >
+
       <span>TC</span> GATOR
+
       <p>COLLECTIBLES</p>
+
     </a>
 
+
     <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#bulk-binders">Trade / Sell</a>
-      <a href="#contact">Contact</a>
+
+      <a
+        href="index.html"
+        class="active"
+      >
+        Home
+      </a>
+
+      <a href="inventory.html">
+        Inventory
+      </a>
+
+      <a href="sell-trade.html">
+        Sell / Trade
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
     </nav>
 
+
     <div class="social-icons">
-      <a href="https://instagram.com/tc.gator" target="_blank">
+
+      <a
+        href="https://instagram.com/tc.gator"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TC Gator Instagram"
+      >
         <i class="fab fa-instagram"></i>
       </a>
 
-      <a href="https://www.tiktok.com/@tc.gator?_r=1&_t=ZP-96AuevrugjW" target="_blank">
+      <a
+        href="https://www.tiktok.com/@tc.gator"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TC Gator TikTok"
+      >
         <i class="fab fa-tiktok"></i>
       </a>
 
-      <a href="https://www.facebook.com/people/TC-Gator-Collectibles/61589492067598/?mibextid=wwXIfr" target="_blank">
+      <a
+        href="https://www.facebook.com/people/TC-Gator-Collectibles/61589492067598/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TC Gator Facebook"
+      >
         <i class="fab fa-facebook-f"></i>
       </a>
+
     </div>
+
   </header>
+
 
   <main>
 
+
     <!-- HERO -->
-    <section class="hero" id="home">
 
-      <div class="hero-glow"></div>
+<section
+  class="hero image-hero"
+  id="home"
+>
 
-<div class="hero-badge">
-  BUY • SELL • TRADE • COLLECT
-</div>
-
-<h1>
-  Turn Your Cards Into
-  <span>Cash, Trades, or Grails</span>
-</h1>
-
-<p class="hero-lead">
-  TC Gator Collectibles buys, sells, and trades Pokémon cards,
-  slabs, sealed products, bulk, binders, and full collections
-  across Oceanside and North County San Diego.
-</p>
-
-<div class="hero-actions">
-  <a href="#trade" class="hero-btn primary">Send Your Collection</a>
-  <a href="#shop" class="hero-btn secondary">View Inventory</a>
-</div>
-
-<div class="hero-stats">
-  <div>
-    <strong>Pokémon</strong>
-    <span>Singles & Slabs</span>
-  </div>
-
-  <div>
-    <strong>Sealed</strong>
-    <span>ETBs • Boxes • Packs</span>
-  </div>
-
-  <div>
-    <strong>Local</strong>
-    <span>Oceanside, CA</span>
-  </div>
-</div>
-
-<div class="hero-grid">
-
-<div class="info-card premium-hero-card simple-hero-card">
-
-  <div class="hero-mini-badge">
-    TC GATOR COLLECTIBLES
-  </div>
-
-  <h2>
-    Built For
-    <span>Collectors.</span>
-  </h2>
-
-  <p class="premium-hero-text">
-    Curated singles, slabs, sealed products, and fresh pickups for collectors who want clean cards and fair trades.
-  </p>
-
-  <div class="premium-hero-actions">
-    <a href="#shop" class="premium-hero-btn primary">
-      View Inventory
-    </a>
-
-    <a href="#contact" class="premium-hero-btn secondary">
-      Sell / Trade
-    </a>
-  </div>
-
-</div>
-
-  <div class="image-card">
-    <img src="slabs.png" alt="TC Gator graded slabs">
-  </div>
-
-</div>
-
-    <!-- TICKER -->
-    <div class="ticker-bar">
-      <div class="ticker-track">
-
-        <span>| BUY</span>
-        <span>SELL</span>
-        <span>TRADE</span>
-        <span>POKÉMON</span>
-        <span>ONE PIECE</span>
-        <span>DRAGON BALL</span>
-        <span>SEALED PRODUCTS</span>
-        <span>SLABS</span>
-        <span>RAW SINGLES</span>
-        <span>SPORTS CARDS</span>
-        <span>FINAL FANTASY</span>
-        <span>YUGIOH</span>
-        <span>BASEBALL</span>
-        <span>FOOTBALL</span>
-        <span>MTG |</span>
-
-      </div>
-    </div>
-
-<!-- FEATURED INVENTORY -->
-<section class="shop-categories reveal" id="shop">
-
-  <div class="section-header">
-    <p class="eyebrow">Fresh Inventory</p>
-    <h2>Featured Picks</h2>
-    <p>Real cards and sealed products currently available from TC Gator Collectibles.</p>
-  </div>
-
-  <div class="inventory-filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="pokemon">Pokémon</button>
-    <button class="filter-btn" data-filter="dragonball">Dragon Ball</button>
-    <button class="filter-btn" data-filter="onepiece">One Piece</button>
-    <button class="filter-btn" data-filter="sealed">Sealed</button>
-    <button class="filter-btn" data-filter="slab">Slabs</button>
-  </div>
-
-  <div class="inventory-grid">
-
-    <div class="inventory-card reveal" data-category="dragonball">
-      <span class="tag dragon">Dragon Ball</span>
-      <img src="sleepygoku.png" alt="Sleepy Goku card">
-      <h3>Sleepy Goku</h3>
-      <p>Mint condition Dragon Ball single.</p>
-      <div class="card-meta">
-        <span>Mint</span>
-        <strong>$480</strong>
-      </div>
-      <button>View Card</button>
-    </div>
-
-    <div class="inventory-card reveal" data-category="dragonball">
-      <span class="tag dragon">Dragon Ball</span>
-      <img src="bulma.png" alt="Bulma card">
-      <h3>Bulma</h3>
-      <p>Mint condition Dragon Ball single.</p>
-      <div class="card-meta">
-        <span>Mint</span>
-        <strong>$60</strong>
-      </div>
-      <button>View Card</button>
-    </div>
-
-    <div class="inventory-card reveal" data-category="pokemon">
-      <span class="tag pokemon">Pokémon</span>
-      <img src="gangarpic.png" alt="Gengar card">
-      <h3>Gengar</h3>
-      <p>Mint condition Pokémon single.</p>
-      <div class="card-meta">
-        <span>Mint</span>
-        <strong>$60</strong>
-      </div>
-      <button>View Card</button>
-    </div>
-
-    <div class="inventory-card reveal" data-category="pokemon">
-      <span class="tag pokemon">Pokémon</span>
-      <img src="grim.png" alt="Marnie's Grimmsnarl ex card">
-      <h3>Marnie's Grimmsnarl ex</h3>
-      <p>Mint condition Pokémon single.</p>
-      <div class="card-meta">
-        <span>Mint</span>
-        <strong>$85</strong>
-      </div>
-      <button>View Card</button>
-    </div>
-
-    <div class="inventory-card reveal" data-category="pokemon">
-      <span class="tag pokemon">Pokémon</span>
-      <img src="charizard.png" alt="M Charizard card">
-      <h3>M Charizard</h3>
-      <p>Mint condition Pokémon single.</p>
-      <div class="card-meta">
-        <span>Mint</span>
-        <strong>$30</strong>
-      </div>
-      <button>View Card</button>
-    </div>
-
-    <div class="inventory-card reveal" data-category="onepiece">
-      <span class="tag onepiece">One Piece</span>
-      <img src="zoro.png" alt="Zoro card">
-      <h3>Zoro</h3>
-      <p>Mint condition One Piece single.</p>
-      <div class="card-meta">
-        <span>Mint</span>
-        <strong>$35</strong>
-      </div>
-      <button>View Card</button>
-    </div>
-
-    <div class="inventory-card reveal" data-category="onepiece">
-      <span class="tag onepiece">One Piece</span>
-      <img src="girlop.png" alt="Rebecca card">
-      <h3>Rebecca</h3>
-      <p>Mint condition One Piece single.</p>
-      <div class="card-meta">
-        <span>Mint</span>
-        <strong>$130</strong>
-      </div>
-      <button>View Card</button>
-    </div>
-
-    <div class="inventory-card reveal sealed-card" data-category="sealed">
-      <span class="tag sealed">Sealed</span>
-      <img src="baseball.png" alt="Sealed 2021 Topps Chrome Update">
-      <h3>2021 Topps Chrome Update</h3>
-      <p>Sealed baseball product.</p>
-      <div class="card-meta">
-        <span>Sealed</span>
-        <strong>$50</strong>
-      </div>
-      <button>View Product</button>
-    </div>
-
-    <div class="inventory-card reveal sealed-card" data-category="sealed">
-      <span class="tag sealed">Sealed</span>
-      <img src="magic.png" alt="Sealed Magic Final Fantasy">
-      <h3>Magic Final Fantasy</h3>
-      <p>Sealed Magic: The Gathering Final Fantasy product.</p>
-      <div class="card-meta">
-        <span>Sealed</span>
-        <strong>$200</strong>
-      </div>
-      <button>View Product</button>
-    </div>
-
-    <div class="inventory-card reveal premium-card" data-category="slab">
-      <span class="tag slab">Premium Slab</span>
-      <img src="premiumslab1.png" alt="Umbreon ex CGC Gem Mint 10 slab">
-      <h3>Umbreon ex CGC</h3>
-      <p>Premium graded slab.</p>
-      <div class="card-meta">
-        <span>CGC Gem Mint 10</span>
-        <strong>$110</strong>
-      </div>
-      <button>View Slab</button>
-    </div>
-
-    <div class="inventory-card reveal premium-card" data-category="slab">
-      <span class="tag slab">Premium Slab</span>
-      <img src="premslab2.png" alt="Gholdengo ex PSA 9 slab">
-      <h3>Gholdengo ex PSA</h3>
-      <p>Premium graded slab.</p>
-      <div class="card-meta">
-        <span>PSA 9</span>
-        <strong>$50</strong>
-      </div>
-      <button>View Slab</button>
-    </div>
-
-  </div>
-</section>
-
-<!-- RECENTLY ADDED -->
-<section class="recent-section reveal">
-
-  <div class="section-header">
-    <p class="eyebrow">New Inventory</p>
-    <h2>Recently Added</h2>
-    <p>Fresh pickups, new grails, and recent additions to the collection.</p>
-  </div>
-
-<div class="recent-grid">
-
-  <div class="recent-card">
-    <div class="recent-badge">NEW</div>
+  <div class="image-hero-background">
 
     <img
-  src="newpick1.png"
-  alt="Erika's Clefable 03"
-  class="popup-card"
-  data-image="newpick1.png"
-  data-title="Erika's Clefable 03"
-  data-text=""
->
+      src="images/hero-banner.png"
+      alt="TC Gator collectible card showcase"
+    >
 
-    <div class="recent-info">
-      <h3>Erika's Clefable 03</h3>
-      <p>PSA 8 Clefable Holo</p>
-      <span>$65 / Available</span>
-    </div>
   </div>
 
-  <div class="recent-card">
-    <div class="recent-badge">NEW</div>
 
-   <img
-  src="newpick2.png"
-  alt="Ceruledge"
-  class="popup-card"
-  data-image="newpick2.png"
-  data-title="Ceruledge"
-  data-text=""
->
+  <div class="image-hero-overlay"></div>
 
-    <div class="recent-info">
-      <h3>Ceruledge</h3>
-      <p>Raw Single</p>
-      <span>$25 / Available</span>
+
+  <div class="image-hero-content">
+
+    <div class="hero-badge">
+
+      BUY • SELL • TRADE • COLLECT
+
     </div>
-  </div>
 
-  <div class="recent-card">
-    <div class="recent-badge">NEW</div>
 
-    <img
-  src="newpick3.png"
-  alt="Japanese Sugar Kingdoms of Intrigue 024"
-  class="popup-card"
-  data-image="newpick3.png"
-  data-title="Japanese Sugar Kingdoms of Intrigue 024"
-  data-text=""
->
+    <h1>
 
-    <div class="recent-info">
-      <h3>Japanese Sugar Kingdoms of Intrigue 024</h3>
-      <p>Raw Single</p>
-      <span>$5 / Available</span>
+      Made for
+
+      <span>
+        the Hunt.
+      </span>
+
+    </h1>
+
+
+    <p class="hero-lead">
+
+      Discover singles, slabs, sealed products, and collector pieces
+      from Pokémon, Dragon Ball, One Piece, sports, and more.
+
+    </p>
+
+
+    <div class="hero-actions">
+
+      <a
+        href="inventory.html"
+        class="hero-btn primary"
+      >
+        View Inventory
+      </a>
+
+      <a
+        href="sell-trade.html"
+        class="hero-btn secondary"
+      >
+        Sell or Trade
+      </a>
+
     </div>
-  </div>
 
-</div>
+
+    <div class="hero-stats">
+
+      <div>
+
+        <strong>
+          Fresh Inventory
+        </strong>
+
+        <span>
+          Singles • Slabs • Sealed
+        </span>
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Fair Deals
+        </strong>
+
+        <span>
+          Cash • Trade • Both
+        </span>
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Local
+        </strong>
+
+        <span>
+          Oceanside, CA
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
-    <!-- CURRENTLY LOOKING FOR -->
-    <section class="looking reveal" id="bulk-binders">
+<!-- COLLECTOR HIGHLIGHTS -->
 
-      <h2>Currently Looking For</h2>
+<section
+  class="collector-highlights reveal"
+  id="featured"
+>
+
+
+  <div class="section-header">
+
+    <p class="eyebrow">
+      TC Gator Showcase
+    </p>
+
+    <h2>
+      Collector Highlights
+    </h2>
+
+    <p>
+    Hand picked selection by our TC Gator Crew of featured collectibles from our
+      TC Gator collection and current inventory.
+    </p>
+
+  </div>
+
+
+  <div class="highlights-grid">
+
+
+    <!-- STAFF PICK -->
+
+    <article class="highlight-card reveal">
+
+      <div class="highlight-image">
+
+        <span class="highlight-label">
+          Staff Pick
+        </span>
+
+        <img
+          src="images/featured-1.png"
+          alt="TC Gator staff pick trading card"
+        >
+
+      </div>
+
+
+      <div class="highlight-content">
+
+        <p class="highlight-category">
+          Featured Selection
+        </p>
+
+        <h3>
+          Charizard VMAX
+        </h3>
+
+        <p>
+          Staff Pick! Charizard with the mewtwo VMAX artwork is a collector favorite and a must-have for any Pokémon collection.
+        </p>
+
+
+        <div class="highlight-meta">
+
+          <span>
+            Available
+          </span>
+
+          <strong>
+            $85
+          </strong>
+
+        </div>
+
+
+        <a
+          href="inventory.html"
+          class="highlight-btn"
+        >
+          Explore
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- VINTAGE PICK -->
+
+    <article class="highlight-card reveal">
+
+      <div class="highlight-image">
+
+        <span class="highlight-label">
+          Vintage Pick
+        </span>
+
+        <img
+          src="images/featured-2.png"
+          alt="TC Gator vintage pick trading card"
+        >
+
+      </div>
+
+
+      <div class="highlight-content">
+
+        <p class="highlight-category">
+          Collector Favorite
+        </p>
+
+        <h3>
+          Sabrina's Gengar (JPN)
+        </h3>
+
+        <p>
+          A recognizable Pokémon favorite with timeless
+          collector appeal.
+        </p>
+
+
+        <div class="highlight-meta">
+
+          <span>
+            Available
+          </span>
+
+          <strong>
+            $320
+          </strong>
+
+        </div>
+
+
+        <a
+          href="inventory.html"
+          class="highlight-btn"
+        >
+          Explore
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- NEWEST ADDITION -->
+
+    <article class="highlight-card reveal">
+
+      <div class="highlight-image">
+
+        <span class="highlight-label">
+          Newest Addition
+        </span>
+
+        <img
+          src="images/featured-3.png"
+          alt="Newest trading card added to TC Gator inventory"
+        >
+
+      </div>
+
+
+      <div class="highlight-content">
+
+        <p class="highlight-category">
+          Fresh Inventory
+        </p>
+
+        <h3>
+          King Luffy
+        </h3>
+
+        <p>
+          One of the latest collector pieces added to
+          the TC Gator inventory.
+        </p>
+
+
+        <div class="highlight-meta">
+
+          <span>
+            Available
+          </span>
+
+          <strong>
+            $130
+          </strong>
+
+        </div>
+
+
+        <a
+          href="inventory.html"
+          class="highlight-btn"
+        >
+          Explore
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- GRAIL CARD -->
+
+    <article class="highlight-card grail-highlight reveal">
+
+      <div class="highlight-image">
+
+        <span class="highlight-label">
+          Grail Card
+        </span>
+
+        <img
+          src="images/featured-4.png"
+          alt="Premium grail card from TC Gator inventory"
+        >
+
+      </div>
+
+
+      <div class="highlight-content">
+
+        <p class="highlight-category">
+          Premium Highlight
+        </p>
+
+        <h3>
+          Southern Island Mew
+        </h3>
+
+        <p>
+          A Premium grail card from the TC Gator inventory, this Southern Island Mew is a rare and highly sought-after collectible.
+        </p>
+
+
+        <div class="highlight-meta">
+
+          <span>
+            Available
+          </span>
+
+          <strong>
+            $400
+          </strong>
+
+        </div>
+
+
+        <a
+          href="inventory.html"
+          class="highlight-btn"
+        >
+          Explore
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+
+  <div class="highlights-footer">
+
+    <a
+      href="inventory.html"
+      class="hero-btn primary"
+    >
+      Browse Full Inventory
+    </a>
+
+  </div>
+
+
+</section>
+
+
+    <!-- SELL / TRADE -->
+
+    <section
+      class="looking reveal"
+      id="sell-trade-preview"
+    >
+
+
+      <div class="section-header">
+
+        <p class="eyebrow">
+          Have Cards To Move?
+        </p>
+
+        <h2>
+          Looking to Sell or Trade?
+        </h2>
+
+        <p>
+          We buy and trade singles, slabs, sealed products,
+          binders, bulk, vintage cards, modern hits,
+          and complete collections.
+        </p>
+
+      </div>
+
 
       <div class="looking-grid">
 
-        <button class="small-card look-tab active" data-look="pokemon">
-          <div class="icon">▱</div>
+
+        <a
+          href="sell-trade.html"
+          class="small-card category-card"
+        >
+
+          <div class="icon">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+          </div>
 
           <div>
-            <h3>Pokémon Collections</h3>
-            <p>
-              Binders, vintage cards,
-              modern hits, bulk, and full collections.
-            </p>
-          </div>
-        </button>
 
-        <button class="small-card look-tab" data-look="slabs">
-          <div class="icon">✓</div>
+            <h3>
+              Full Collections
+            </h3>
+
+            <p>
+              Binders, bulk, vintage cards, modern hits,
+              and complete collections.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          href="sell-trade.html"
+          class="small-card category-card"
+        >
+
+          <div class="icon">
+
+            <i class="fa-solid fa-certificate"></i>
+
+          </div>
 
           <div>
-            <h3>PSA & TAG Slabs</h3>
-            <p>
-              High-end graded cards,
-              rare promos, alt arts, and grails.
-            </p>
-          </div>
-        </button>
 
-        <button class="small-card look-tab" data-look="sealed">
-          <div class="icon">⬡</div>
+            <h3>
+              Slabs and Grails
+            </h3>
+
+            <p>
+              PSA, CGC, TAG, rare promos,
+              premium slabs, and chase cards.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          href="sell-trade.html"
+          class="small-card category-card"
+        >
+
+          <div class="icon">
+
+            <i class="fa-solid fa-box"></i>
+
+          </div>
 
           <div>
-            <h3>Sealed Products</h3>
+
+            <h3>
+              Sealed Products
+            </h3>
+
             <p>
-              ETBs, booster boxes,
-              tins, packs, and collection boxes.
+              ETBs, booster boxes, tins,
+              packs, and collection boxes.
             </p>
+
           </div>
-        </button>
+
+        </a>
+
 
       </div>
 
-      <!-- PANELS -->
-      <div class="look-panels">
 
-        <!-- POKEMON -->
-        <div class="look-panel active" data-panel="pokemon">
+      <div class="hero-actions">
 
-          <div class="wanted-grid">
-
-            <div class="wanted-card">
-              <img
-                src="dragonite.png"
-                alt="Dragonite"
-                class="popup-card"
-                data-image="dragonite.png"
-                data-title="Dragonite"
-                data-text="Holo 19/62 1st Edition"
-              >
-
-              <h3>Dragonite</h3>
-              <p>Holo 19/62 1st Edition</p>
-            </div>
-
-            <div class="wanted-card">
-              <img
-                src="giratina.png"
-                alt="Giratina"
-                class="popup-card"
-                data-image="giratina.png"
-                data-title="Giratina V Alt Art"
-                data-text="GG69/GG70 - Raw or Graded Wanted!"
-              >
-
-              <h3>Giratina V Alt Art</h3>
-              <p>GG69/GG70 - Raw or Graded Wanted!</p>
-            </div>
-
-            <div class="wanted-card">
-              <img
-                src="gardevoir.png"
-                alt="Gardevoir"
-                class="popup-card"
-                data-image="gardevoir.png"
-                data-title="Gardevoir"
-                data-text="M Gardevoir EX RC31/RC32!"
-              >
-
-              <h3>Gardevoir</h3>
-              <p>M Gardevoir EX RC31/RC32</p>
-            </div>
-
-            <div class="wanted-card">
-              <img
-                src="kingdra.png"
-                alt="Kingdra"
-                class="popup-card"
-                data-image="kingdra.png"
-                data-title="Kingdra"
-                data-text="Raw or Graded! 131 Promo"
-              >
-
-              <h3>Kingdra</h3>
-              <p>Raw or Graded! 131 Promo</p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- SLABS -->
-        <div class="look-panel" data-panel="slabs">
-
-          <div class="wanted-grid">
-
-            <div class="wanted-card">
-              <img
-                src="pope.png"
-                alt="PSA Slabs"
-                class="popup-card"
-                data-image="pope.png"
-                data-title="PSA Slabs"
-                data-text="Clean 9s, 10s, promos, and chase slabs."
-              >
-
-              <h3>PSA Slabs</h3>
-              <p>Clean 9s, 10s, promos, and chase slabs.</p>
-            </div>
-
-            <div class="wanted-card">
-              <img
-                src="tag.png"
-                alt="TAG Slabs"
-                class="popup-card"
-                data-image="tag.png"
-                data-title="TAG Slabs"
-                data-text="Clean TAG graded cards and modern grails."
-              >
-
-              <h3>TAG Slabs</h3>
-              <p>Clean TAG graded cards and modern grails.</p>
-            </div>
-
-          </div>
-        </div>
+        <a
+          href="sell-trade.html"
+          class="hero-btn primary"
+        >
+          Get an Offer
+        </a>
 
       </div>
+
+
     </section>
 
-    <!-- CONTACT -->
-    <section class="contact-section reveal" id="contact">
-
-      <h2>Send Your Collection</h2>
-
-      <p>
-        Fill this out so we can review what you have.
-      </p>
-
-      <form
-        class="trade-form"
-        id="trade-form"
-        action="https://formspree.io/f/xaqvlbdv"
-        method="POST"
-      >
-
-        <input type="text" name="name" placeholder="Your name" required>
-
-        <input type="email" name="email" placeholder="Your email" required>
-
-        <input type="text" name="collection" placeholder="What do you have?">
-
-        <textarea
-          name="details"
-          placeholder="Tell us about the cards, condition, quantity, and value."
-        ></textarea>
-
-        <button type="submit">Send Details</button>
-
-      </form>
-    </section>
 
   </main>
 
+
+
   <!-- FOOTER -->
+
   <footer>
 
+
     <div class="logo footer-logo">
+
       <span>TC</span> GATOR
+
       <p>COLLECTIBLES</p>
+
     </div>
 
-    <div>
-      <p>Oceanside, CA</p>
+
+    <div class="footer-location">
+
+      <p>
+        Oceanside, CA
+      </p>
+
     </div>
 
-    <div>
-      <p>© 2026 TC GATOR COLLECTIBLES</p>
-      <p>Buy • Sell • Trade • Collect</p>
+
+    <div class="footer-copy">
+
+      <p>
+        © 2026 TC GATOR COLLECTIBLES
+      </p>
+
+      <p>
+        Buy • Sell • Trade • Collect
+      </p>
+
     </div>
+
 
   </footer>
 
-  <!-- POPUP -->
-<div class="card-popup" id="cardPopup">
 
-  <div class="popup-overlay"></div>
-
-  <button class="popup-nav prev-popup">❮</button>
-  <button class="popup-nav next-popup">❯</button>
-
-  <div class="popup-content">
-
-    <button class="popup-close" id="popupClose">✕</button>
-
-    <img src="" alt="" id="popupImage">
-
-    <div class="popup-info">
-
-        <h2 id="popupTitle"></h2>
-
-        <p id="popupText"></p>
-        <div class="popup-counter" id="popupCounter"></div>
-
-      </div>
-
-    </div>
-
-  </div>
 
   <!-- CURSOR -->
+
   <div class="cursor-glow"></div>
 
+
+
   <!-- CLICK SOUND -->
-  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+
+  <audio
+    id="clickSound"
+    src="images/click.mp3"
+    preload="auto"
+  ></audio>
+
+
 
   <!-- SCRIPT -->
+
   <script>
+
 
     /* REVEAL */
 
-    const revealElements = document.querySelectorAll(".reveal");
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
 
     function revealOnScroll() {
 
       revealElements.forEach((element) => {
 
-        const rect = element.getBoundingClientRect();
+        const rect =
+          element.getBoundingClientRect();
 
-        if (rect.top < window.innerHeight - 120) {
+        if (
+          rect.top <
+          window.innerHeight - 120
+        ) {
+
           element.classList.add("active");
+
         }
 
       });
 
     }
 
-    window.addEventListener("scroll", revealOnScroll);
+
+    window.addEventListener(
+      "scroll",
+      revealOnScroll
+    );
+
 
     revealOnScroll();
 
- /* FILTERS */
 
-const filterButtons = document.querySelectorAll(".filter-btn");
-const inventoryCards = document.querySelectorAll(".inventory-card");
 
-inventoryCards.forEach((card) => {
-  card.classList.add("is-visible");
-});
+    /* SCROLL PROGRESS */
 
-filterButtons.forEach((button) => {
+    const scrollProgress =
+      document.querySelector(".scroll-progress");
 
-  button.addEventListener("click", () => {
 
-    filterButtons.forEach((btn) =>
-      btn.classList.remove("active")
-    );
+    window.addEventListener("scroll", () => {
 
-    button.classList.add("active");
+      const scrollTop =
+        document.documentElement.scrollTop;
 
-    const filter = button.dataset.filter;
+      const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
 
-    inventoryCards.forEach((card) => {
+      const scrollPercent =
+        scrollHeight > 0
+          ? (scrollTop / scrollHeight) * 100
+          : 0;
 
-      const category = card.dataset.category;
+      if (scrollProgress) {
 
-      if (filter === "all" || filter === category) {
-        card.style.display = "block";
+        scrollProgress.style.width =
+          `${scrollPercent}%`;
 
-        setTimeout(() => {
-          card.classList.remove("is-hidden");
-          card.classList.add("is-visible");
-        }, 20);
-
-      } else {
-        card.classList.remove("is-visible");
-        card.classList.add("is-hidden");
-
-        setTimeout(() => {
-          card.style.display = "none";
-        }, 300);
       }
 
     });
 
-  });
 
-});
 
-    /* LOOK TABS */
+    /* CLICK SOUND */
 
-    const lookTabs = document.querySelectorAll(".look-tab");
-    const lookPanels = document.querySelectorAll(".look-panel");
+    const clickSound =
+      document.getElementById("clickSound");
 
-    lookTabs.forEach((tab) => {
 
-      tab.addEventListener("click", () => {
+    const isMobileDevice =
+      window
+        .matchMedia("(max-width: 768px)")
+        .matches;
 
-        const selected = tab.dataset.look;
 
-        lookTabs.forEach((item) =>
-          item.classList.remove("active")
-        );
+    if (!isMobileDevice && clickSound) {
 
-        lookPanels.forEach((panel) =>
-          panel.classList.remove("active")
-        );
+      document.addEventListener("click", () => {
 
-        tab.classList.add("active");
+        clickSound.currentTime = 0;
 
-        document
-          .querySelector(`[data-panel="${selected}"]`)
-          .classList.add("active");
+        clickSound.volume = 0.12;
+
+        clickSound
+          .play()
+          .catch(() => {});
 
       });
 
-    });
-
-    /* POPUP */
-
-    const popup = document.getElementById("cardPopup");
-    const popupImage = document.getElementById("popupImage");
-    const popupTitle = document.getElementById("popupTitle");
-    const popupText = document.getElementById("popupText");
-    const popupClose = document.getElementById("popupClose");
-    const popupCounter = document.getElementById("popupCounter");
-
-    const popupCards = document.querySelectorAll(".popup-card");
-const inventoryCardsClickable = document.querySelectorAll(".inventory-card");
-
-inventoryCardsClickable.forEach((card) => {
-
-  card.addEventListener("click", () => {
-
-    const cardImage = card.querySelector("img").src;
-    const cardTitle = card.querySelector("h3").textContent;
-    const cardText = card.querySelector("p").textContent;
-
-    popupImage.src = cardImage;
-    popupTitle.textContent = cardTitle;
-    popupText.textContent = cardText;
-
-    currentPopupIndex = Array.from(allPopupCards).indexOf(card);
-
-    updatePopup(card);
-    popup.classList.add("active");
-
-  });
-
-});
-
-popupCards.forEach((card) => {
-
-  card.addEventListener("click", () => {
-
-    popupImage.src = card.dataset.image;
-    popupTitle.textContent = card.dataset.title;
-    popupText.textContent = card.dataset.text;
-
-    currentPopupIndex = Array.from(allPopupCards).indexOf(card);
-
-    updatePopup(card);
-    popup.classList.add("active");
-
-  });
-
-});
-
-    popupClose.addEventListener("click", () => {
-      popup.classList.remove("active");
-    });
-
-const popupOverlay = document.querySelector(".popup-overlay");
-
-popupOverlay.addEventListener("click", () => {
-  popup.classList.remove("active");
-});
-
-    let currentPopupIndex = 0;
-
-const allPopupCards = document.querySelectorAll(
-  ".popup-card, .inventory-card"
-);
-
-const nextPopupBtn = document.querySelector(".next-popup");
-const prevPopupBtn = document.querySelector(".prev-popup");
-
-function updatePopup(card) {
-
-  popupImage.classList.add("popup-changing");
-  popupTitle.classList.add("popup-changing");
-  popupText.classList.add("popup-changing");
-
-  setTimeout(() => {
-
-    let image;
-    let title;
-    let text;
-
-    if (card.classList.contains("inventory-card")) {
-      image = card.querySelector("img").src;
-      title = card.querySelector("h3").textContent;
-      text = card.querySelector("p").textContent;
-    } else {
-      image = card.dataset.image;
-      title = card.dataset.title;
-      text = card.dataset.text;
     }
 
-    popupImage.src = image;
-    popupTitle.textContent = title;
-    popupText.textContent = text;
 
-    popupCounter.textContent =
-      `${currentPopupIndex + 1} / ${allPopupCards.length}`;
 
-    popupImage.classList.remove("popup-changing");
-    popupTitle.classList.remove("popup-changing");
-    popupText.classList.remove("popup-changing");
+    /* LOADER */
 
-  }, 140);
+    const loader =
+      document.getElementById("loader");
 
-}
 
-nextPopupBtn.addEventListener("click", () => {
+    function hideLoader() {
 
-  currentPopupIndex++;
+      if (loader) {
 
-  if (currentPopupIndex >= allPopupCards.length) {
-    currentPopupIndex = 0;
-  }
+        loader.classList.add(
+          "hide-loader"
+        );
 
-  updatePopup(allPopupCards[currentPopupIndex]);
-
-});
-
-prevPopupBtn.addEventListener("click", () => {
-
-  currentPopupIndex--;
-
-  if (currentPopupIndex < 0) {
-    currentPopupIndex = allPopupCards.length - 1;
-  }
-
-  updatePopup(allPopupCards[currentPopupIndex]);
-
-});
-
-    /* KEYBOARD POPUP CONTROLS */
-
-    document.addEventListener("keydown", (e) => {
-
-      if (!popup.classList.contains("active")) return;
-
-      if (e.key === "ArrowRight") {
-        nextPopupBtn.click();
       }
 
-      if (e.key === "ArrowLeft") {
-        prevPopupBtn.click();
-      }
+    }
 
-      if (e.key === "Escape") {
-        popup.classList.remove("active");
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => {
+
+        setTimeout(
+          hideLoader,
+          700
+        );
+
+      }
+    );
+
+
+    setTimeout(
+      hideLoader,
+      1800
+    );
+
+
+    window.addEventListener(
+      "load",
+      hideLoader
+    );
+
+
+
+    /* NAVBAR SHADOW */
+
+    const navbar =
+      document.querySelector(".navbar");
+
+
+    window.addEventListener("scroll", () => {
+
+      if (!navbar) return;
+
+      if (window.scrollY > 20) {
+
+        navbar.classList.add(
+          "scrolled"
+        );
+
+      } else {
+
+        navbar.classList.remove(
+          "scrolled"
+        );
+
       }
 
     });
 
-/* MOBILE SWIPE POPUP */
-
-let touchStartX = 0;
-let touchEndX = 0;
-
-popup.addEventListener("touchstart", (e) => {
-  touchStartX = e.changedTouches[0].screenX;
-}, { passive: true });
-
-popup.addEventListener("touchmove", (e) => {
-  if (popup.classList.contains("active")) {
-    e.preventDefault();
-  }
-}, { passive: false });
-
-popup.addEventListener("touchend", (e) => {
-  touchEndX = e.changedTouches[0].screenX;
-  handleSwipe();
-}, { passive: true });
-
-function handleSwipe() {
-  const swipeDistance = touchEndX - touchStartX;
-
-  if (Math.abs(swipeDistance) < 50) return;
-
-  if (swipeDistance < 0) {
-    nextPopupBtn.click();
-  } else {
-    prevPopupBtn.click();
-  }
-}
-
-/* ACTIVE NAV HIGHLIGHT ON SCROLL */
-
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-  let currentSection = "";
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 180;
-    const sectionHeight = section.offsetHeight;
-
-    if (
-      window.scrollY >= sectionTop &&
-      window.scrollY < sectionTop + sectionHeight
-    ) {
-      currentSection = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-
-    if (link.getAttribute("href") === `#${currentSection}`) {
-      link.classList.add("active");
-    }
-  });
-});
-
-/* PREMIUM SLAB SHOWCASE */
-
-const slabs = [
-  {
-    image: "umbreon.png",
-    title: "Umbreon Premium Slab",
-    text: "Centerpiece grail card for serious collectors.",
-    price: "$5,000"
-  },
-  {
-    image: "giratina.png",
-    title: "Giratina V Alt Art",
-    text: "Modern chase card with premium display appeal.",
-    price: "Market Price"
-  },
-  {
-    image: "gardevoir.png",
-    title: "Gardevoir Premium Hit",
-    text: "Clean artwork, strong collector demand, and display-ready.",
-    price: "Available"
-  },
-  {
-    image: "dragonite.png",
-    title: "Dragonite Grail",
-    text: "Fan-favorite card with high-end collector energy.",
-    price: "Trade / Sell"
-  }
-];
-
- /* CLICK SOUND */
-
-const clickSound = document.getElementById("clickSound");
-const isMobileDevice = window.matchMedia("(max-width: 768px)").matches;
-
-if (!isMobileDevice) {
-  document.addEventListener("click", () => {
-    clickSound.currentTime = 0;
-    clickSound.volume = 0.12;
-    clickSound.play();
-  });
-}
-
-/* LOADER */
-
-const loader = document.getElementById("loader");
-
-function hideLoader() {
-  if (loader) {
-    loader.classList.add("hide-loader");
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(hideLoader, 700);
-});
-
-setTimeout(hideLoader, 1800);
-
-/* STICKY NAV SHADOW */
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-
-  if (window.scrollY > 20) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-
-});
-
-/* EMERGENCY LOADER FALLBACK */
-
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loader");
-
-  if (loader) {
-    loader.classList.add("hide-loader");
-  }
-});
 
   </script>
 
+
 </body>
+
 </html>

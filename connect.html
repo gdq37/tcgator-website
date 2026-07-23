@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta name="theme-color" content="#12091f">
+
+  <title>Pay TC Gator | TC Gator Collectibles</title>
+
+  <meta
+    name="description"
+    content="Quick payment page for TC Gator Collectibles booth purchases."
+  />
+
+  <link rel="icon" type="image/png" href="images/logo.PNG">
+  <link rel="apple-touch-icon" href="images/logo.PNG">
+
+ <link
+  rel="stylesheet"
+  href="css/style.css"
+>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+</head>
+
+<body>
+
+  <div class="scroll-progress"></div>
+
+  <div id="loader">
+    <div class="loader-logo">TC GATOR</div>
+    <div class="loader-subtext">Opening payment page...</div>
+  </div>
+
+  <div class="cherry-blossoms">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="background-glow">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header class="navbar pay-navbar">
+
+    <a href="index.html" class="logo">
+      <span>TC</span> GATOR
+      <p>COLLECTIBLES</p>
+    </a>
+
+    <div class="social-icons">
+      <a
+        href="https://instagram.com/tc.gator"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TC Gator Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@tc.gator"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TC Gator TikTok"
+      >
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+      <a
+        href="https://www.facebook.com/people/TC-Gator-Collectibles/61589492067598/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TC Gator Facebook"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="tc-pay-page reveal">
+
+      <div class="hero-glow"></div>
+
+      <img
+        src="images/logo.PNG"
+        alt="TC Gator Collectibles logo"
+        class="tc-pay-logo"
+      >
+
+      <div class="hero-badge">
+        BOOTH PAYMENT
+      </div>
+
+      <h1>
+        TC Gator
+        <span>Pay</span>
+      </h1>
+
+      <p class="tc-pay-lead">
+        Quick payment for pickups, singles, slabs, sealed products,
+        and card show deals.
+      </p>
+
+      <div class="tc-pay-actions">
+
+        <a
+          href="mailto:djdq37@gmail.com"
+          class="tc-pay-card zelle-pay"
+        >
+          <i class="fa-solid fa-building-columns"></i>
+
+          <div>
+            <strong>Pay With Zelle</strong>
+            <span>djdq37@gmail.com</span>
+          </div>
+
+          <p>Tap to open email or copy this Zelle email into your banking app.</p>
+        </a>
+
+        <a
+          href="https://venmo.com/u/gdq37"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tc-pay-card venmo-pay"
+        >
+          <i class="fa-solid fa-v"></i>
+
+          <div>
+            <strong>Pay With Venmo</strong>
+            <span>@gdq37</span>
+          </div>
+
+          <p>Tap to open Venmo or search this username manually.</p>
+        </a>
+
+      </div>
+
+      <div class="tc-pay-note">
+        <strong>All set after payment?</strong>
+        <span>Thank you for shopping with TC Gator Collectibles.</span>
+      </div>
+
+      <a href="index.html" class="tc-pay-home-btn">
+        Return to TC Gator
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer class="pay-footer">
+
+    <div class="logo footer-logo">
+      <span>TC</span> GATOR
+      <p>COLLECTIBLES</p>
+    </div>
+
+    <div>
+      <p>Oceanside, CA</p>
+    </div>
+
+    <div>
+      <p>© 2026 TC GATOR COLLECTIBLES</p>
+      <p>Buy • Sell • Trade • Collect</p>
+    </div>
+
+  </footer>
+
+  <div class="cursor-glow"></div>
+
+  <audio id="clickSound" src="images/click.mp3" preload="auto"></audio>
+
+  <script>
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      revealElements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight - 120) {
+          element.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+
+
+    const clickSound = document.getElementById("clickSound");
+
+    const isMobileDevice =
+      window.matchMedia("(max-width: 768px)").matches;
+
+    if (!isMobileDevice) {
+      document.addEventListener("click", () => {
+        clickSound.currentTime = 0;
+        clickSound.volume = 0.12;
+        clickSound.play();
+      });
+    }
+
+
+    const loader = document.getElementById("loader");
+
+    function hideLoader() {
+      if (loader) {
+        loader.classList.add("hide-loader");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(hideLoader, 600);
+    });
+
+    setTimeout(hideLoader, 1600);
+
+
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+
+
+    window.addEventListener("load", () => {
+      if (loader) {
+        loader.classList.add("hide-loader");
+      }
+    });
+
+  </script>
+
+</body>
+</html>
